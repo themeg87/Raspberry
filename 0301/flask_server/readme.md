@@ -7,6 +7,7 @@
  4. add container
 
 ### Dockerfile (container 생성시 필요) 🧰
+<pre><code>
 * FROM python:3.8-slim
 
 * WORKDIR /app
@@ -18,10 +19,12 @@
 * COPY . /app
 
 * CMD ["flask", "run", "--host=0.0.0.0"]
-
+</code></pre>
 ### requirements.txt (python에서 사용할 라이브러리 설치) 🧰
+<pre><code>
 + Flask==2.0.1   
 + Werkzeug==2.0.1   
+ </code></pre>
 
 ### app.py (웹에서 실행될 코드) 🗞️
 <pre>
@@ -36,10 +39,14 @@ def hello_world():
 
 if __name__ == '__main__':
     app.run(debug=True)
-
-### Build Docker image (raspberry)
-docker build -t flask-app .
-
-### Add container (potainer.io)
 </code>
 </pre>
+
+### Build Docker image (raspberry)
+<pre>
+ <code>
+docker build -t flask-app .
+  </code>
+</pre>
+### Add container (potainer.io)
+
