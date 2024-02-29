@@ -7,7 +7,7 @@
  4. add container
 
 ### Dockerfile (container 생성시 필요) 🧰
-FROM python:3.8-slim
+** FROM python:3.8-slim
 
 WORKDIR /app
 
