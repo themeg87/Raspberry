@@ -20,8 +20,8 @@ COPY . /app
 CMD ["flask", "run", "--host=0.0.0.0"]
 
 ### requirements.txt (python에서 사용할 라이브러리 설치) 🧰
-Flask==2.0.1
-Werkzeug==2.0.1
+Flask==2.0.1   
+Werkzeug==2.0.1   
 
 ### app.py (웹에서 실행될 코드) 🗞️
 from flask import Flask
