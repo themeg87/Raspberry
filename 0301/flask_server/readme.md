@@ -24,6 +24,8 @@
 + Werkzeug==2.0.1   
 
 ### app.py (웹에서 실행될 코드) 🗞️
+<pre>
+<code>
 from flask import Flask
 
 app = Flask(__name__)
@@ -39,3 +41,5 @@ if __name__ == '__main__':
 docker build -t flask-app .
 
 ### Add container (potainer.io)
+</code>
+</pre>
